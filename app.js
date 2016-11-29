@@ -6,7 +6,7 @@
 // .toUpperCase() or .toLowerCase() used to validate the user 
 // input and accommodate users entering all-caps Y/N or YES/NO answers, too.
 
-var response1= prompt('Does Sam have any cats?').toLowerCase();
+var response1 = prompt('Does Sam have any cats?').toLowerCase();
 
 
 // if(condition is true) {
