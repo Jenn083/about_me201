@@ -3,10 +3,6 @@
 
 
 var response1 = prompt('Does Jennifer believe in magic?').toLowerCase();
-var response2 = prompt('Is Jennifer the youngest in her family?').toLowerCase();
-var response3 = prompt('Does Jennifer know how to swim?').toLowerCase();
-var response4 = prompt('Has Jennifer ever been to Alaska?').toLowerCase();
-var response5 = prompt('Can Jennifer speak Mandarine?').toLowerCase();
 
 if(response1 === 'yes' || response1 === 'y') {
   alert('Yes, Jennifer does believe in magic!');
@@ -15,6 +11,8 @@ if(response1 === 'yes' || response1 === 'y') {
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
+console.log('Does Jennifer believe in magic? User answered: '+ response1);
+var response2 = prompt('Is Jennifer the youngest in her family?').toLowerCase();
 
 if(response2 === 'yes' || response2 === 'y') {
   alert('Yes, you\'re correct, Jennifer is the youngest of four children!');
@@ -23,6 +21,8 @@ if(response2 === 'yes' || response2 === 'y') {
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
+console.log('Is Jennifer the youngest in her family? User answered: ' + response2);
+var response3 = prompt('Does Jennifer know how to swim?').toLowerCase();
 
 if(response3 === 'yes' || response3 === 'y') {
   alert('Yes, Jennifer is an excellent swimmer!');
@@ -31,6 +31,8 @@ if(response3 === 'yes' || response3 === 'y') {
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
+console.log('Does Jennifer know how to swim? User answered: ' + response3);
+var response4 = prompt('Has Jennifer ever been to Alaska?').toLowerCase();
 
 if(response4 === 'yes' || response4 === 'y') {
   alert('That is incorrect! Jennifer has never been to Alaska');
@@ -39,6 +41,8 @@ if(response4 === 'yes' || response4 === 'y') {
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
+console.log('Has Jennifer ever been to Alaska? User answered: ' + response4);
+var response5 = prompt('Can Jennifer speak Mandarine?').toLowerCase();
 
 if(response5 === 'yes' || response5 === 'y') {
   alert('You\'re incorrect. Jennifer does not speak Mandarine');
@@ -47,3 +51,4 @@ if(response5 === 'yes' || response5 === 'y') {
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
+console.log('Can Jennifer speak Mandarine? User answered: ' + response5);
