@@ -2,3 +2,27 @@
 	outline: 1px solid orange;
 
 }*/
+
+img {
+	float: right;
+	height: 258px;
+	width: 250px;
+}
+
+/*nav {
+	width: 100px;
+	height: 100%;
+	float: left;
+	position: fixed;
+	display: block;
+	background-color: black;
+	color: white;
+}*/
+
+.summary {
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
