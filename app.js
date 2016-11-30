@@ -60,3 +60,19 @@ if(response5 === 'yes' || response5 === 'y') {
 }
 console.log('Can Jennifer speak Mandarine? User answered: ' + response5);
 document.write('You answered: ' + response5 + ' to question #5 <br>');
+
+var response6 = prompt('What is my shoe size?');
+var counter = 0;
+while(counter < 5) {
+  if(response6 > 6) {
+    alert(response6 + ' is too high');
+    response6 = parseInt(prompt('Guess again. What is my shoe size?'));
+  }else if(response6 < 6) {
+    alert(response6 + ' is too low');
+    response6 = parseInt(prompt('Guess again. What is my shoe size?'));
+  }else{
+    alert('Bingo! I do wear a size 6');
+    break;
+  }
+  counter++;
+}
