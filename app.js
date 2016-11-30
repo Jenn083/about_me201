@@ -1,7 +1,8 @@
 'use strict';
 
 
-
+alert('Lets play a guessing game');
+alert('Please answer yes/y or no/n to the following questions');
 var response1 = prompt('Does Jennifer believe in magic?').toLowerCase();
 
 if(response1 === 'yes' || response1 === 'y') {
