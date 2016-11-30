@@ -3,7 +3,7 @@
 
 }*/
 .container {
-	border: 2px solid black;
+	border: 4px solid black;
 	padding: 70px;
 }
 
@@ -26,21 +26,56 @@ nav {
 	color: white;
 }
 
-.summary {
+.mission {
 	text-align: center;
+}
+
+nav li a:link {
+	color: red;
+	text-decoration: none;
+}
+nav a:visited {
+	color: grey;
+}
+
+nav a:hover {
+	color: pink;
 }
 
 nav ul li {
 	display: inline;
 	margin-right: 10px;
 	list-style: none;
+	color: white;
 
 }
 
 i {
 	color: black;
 }
+.email {
+	text-decoration: none;
+	color: blue;
+
+}
+a:visited.email{
+	color: red;
+}
+a:hover.email{
+	color: pink;
+}
 
 .contact {
 	text-align: center;
+}
+.top {
+	text-align: center;
+
+}
+.bottom_link {
+	color: red;
+	text-decoration: none;
+}
+a:hover.bottom_link {
+	color:pink;
 }
