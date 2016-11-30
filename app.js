@@ -7,7 +7,10 @@
 // input and accommodate users entering all-caps Y/N or YES/NO answers, too.
 
 var response1 = prompt('Does Sam have any cats?').toLowerCase();
-
+var response2 = prompt('');
+var response3 = prompt('');
+var response4 = prompt('');
+var response5 = prompt('');
 
 // if(condition is true) {
 // 	do something;
