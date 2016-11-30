@@ -63,7 +63,7 @@ document.write('You answered: ' + response5 + ' to question #5 <br>');
 
 var response6 = prompt('What is my shoe size?');
 var counter = 0;
-while(counter < 5) {
+while(counter < 3) {
   if(response6 > 6) {
     alert(response6 + ' is too high');
     response6 = parseInt(prompt('Guess again. What is my shoe size?'));
