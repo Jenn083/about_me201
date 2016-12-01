@@ -74,5 +74,25 @@ while(counter < 3) {
     alert('Bingo! I do wear a size 6');
     break;
   }
-  counter++;
+  counter++;}
+
+
+var favoriteFruits = ['banana', 'apple', 'grapes', 'watermelon', 'kiwi'];
+		var numberOfTries = 0;
+var result = false;
+while (numberOfTries < 3) {
+  var response7 = prompt('What is my favorite fruit?');
+  for(var i = 0; i < favoriteFruits.length; i++) {
+    if(response7 === favoriteFruits[i]) {
+      result = true;
+      break;
+    }
+  }
+  if(result === true) {
+    alert('You got it!');
+    break;
+  }else{
+    alert('Wrong answer!');
+  }
+  numberOfTries++;
 }
