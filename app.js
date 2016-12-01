@@ -1,14 +1,15 @@
 'use strict';
 
-
+var username = prompt('Hello! What is your name?');
 alert('Lets play a guessing game');
 alert('Please answer yes/y or no/n to the following questions');
 var response1 = prompt('Does Jennifer believe in magic?').toLowerCase();
-
+var numberOfCorrectAnswers = 0;
 if(response1 === 'yes' || response1 === 'y') {
   alert('Yes, Jennifer does believe in magic!');
 } else if(response1 === 'no' || response1 === 'n') {
   alert('Sorry, you\'re wrong, Jennifer does believe in magic.');
+  numberOfCorrectAnswers += 1;
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
@@ -18,6 +19,7 @@ var response2 = prompt('Is Jennifer the youngest in her family?').toLowerCase();
 
 if(response2 === 'yes' || response2 === 'y') {
   alert('Yes, you\'re correct, Jennifer is the youngest of four children!');
+  numberOfCorrectAnswers += 1;
 } else if(response2 === 'no' || response2 === 'n') {
   alert('Sorry, you\'re wrong, Jennifer is the youngest of four children.');
 } else {
@@ -29,6 +31,7 @@ var response3 = prompt('Does Jennifer know how to swim?').toLowerCase();
 
 if(response3 === 'yes' || response3 === 'y') {
   alert('Yes, Jennifer is an excellent swimmer!');
+  numberOfCorrectAnswers += 1;
 } else if(response3 === 'no' || response3 === 'n') {
   alert('Sorry, you\'re wrong, Jennifer swims very well.');
 } else {
@@ -41,6 +44,7 @@ var response4 = prompt('Has Jennifer ever been to Alaska?').toLowerCase();
 
 if(response4 === 'yes' || response4 === 'y') {
   alert('That is incorrect! Jennifer has never been to Alaska');
+  numberOfCorrectAnswers += 1;
 } else if(response4 === 'no' || response4 === 'n') {
   alert('You\'re correct! Jennifer doesn\'t like the cold weather.');
 } else {
@@ -55,12 +59,13 @@ if(response5 === 'yes' || response5 === 'y') {
   alert('You\'re incorrect. Jennifer does not speak Mandarine');
 } else if(response5 === 'no' || response5 === 'n') {
   alert('Correct! Jennifer only speaks English and Vietnamese');
+  numberOfCorrectAnswers += 1;
 } else {
   alert('Try to answer with a yes/y or no/n next time.');
 }
 console.log('Can Jennifer speak Mandarine? User answered: ' + response5);
 document.write('You answered: ' + response5 + ' to question #5 <br>');
-
+alert('The following question requires a numerical value');
 var response6 = prompt('What is my shoe size?');
 var counter = 0;
 while(counter < 3) {
@@ -72,19 +77,21 @@ while(counter < 3) {
     response6 = parseInt(prompt('Guess again. What is my shoe size?'));
   }else{
     alert('Bingo! I do wear a size 6');
+    numberOfCorrectAnswers += 1;
     break;
   }
-  counter++;}
-
-
+  counter++;
+}
+alert('The following question requires a word input');
 var favoriteFruits = ['banana', 'apple', 'grapes', 'watermelon', 'kiwi'];
-		var numberOfTries = 0;
+var numberOfTries = 0;
 var result = false;
 while (numberOfTries < 3) {
   var response7 = prompt('What is my favorite fruit?');
   for(var i = 0; i < favoriteFruits.length; i++) {
     if(response7 === favoriteFruits[i]) {
       result = true;
+      numberOfCorrectAnswers += 1;
       break;
     }
   }
@@ -95,4 +102,10 @@ while (numberOfTries < 3) {
     alert('Wrong answer!');
   }
   numberOfTries++;
+}
+if (numberOfCorrectAnswers > 5) {
+  alert(username + ', you have answered ' + numberOfCorrectAnswers + ' correct questions out of 7. Good Job!');
+}
+else{
+  alert(username + ', you have answered ' + numberOfCorrectAnswers + ' correct questions out of 7. Better luck next time.');
 }
