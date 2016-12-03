@@ -89,14 +89,13 @@ alert('The following question requires a number input');
 var counter = 0;
 
 function question6() {
-  while(counter < 4) {
-    var response6 = prompt('What favortie number?');
+  counter = 0;
+  while(counter < 3) {
+    var response6 = prompt('What Jennifer\'s favorite number?');
     if(response6 > 6) {
       alert(response6 + ' is too high');
-      response6 = parseInt(prompt('Guess again. What is Jennifer\'s favorite number?'));
     }else if(response6 < 6) {
       alert(response6 + ' is too low');
-      response6 = parseInt(prompt('Guess again. What is Jennifer\'s favorite number?'));
     }else{
       alert('Bingo! ' + response6 + ' is my favorite number.');
       numberOfCorrectAnswers += 1;
