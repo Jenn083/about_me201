@@ -85,27 +85,28 @@ function question5() {
 } // end question5
 question5();
 
-alert('The following question requires a numerical value');
+alert('The following question requires a number input');
 var counter = 0;
 
 function question6() {
-  while(counter <= 3) {
-    var response6 = prompt('What is my shoe size?');
+  while(counter < 4) {
+    var response6 = prompt('What favortie number?');
     if(response6 > 6) {
       alert(response6 + ' is too high');
-      response6 = parseInt(prompt('Guess again. What is Jennifer\'s shoe size?'));
+      response6 = parseInt(prompt('Guess again. What is Jennifer\'s favorite number?'));
     }else if(response6 < 6) {
       alert(response6 + ' is too low');
-      response6 = parseInt(prompt('Guess again. What is Jennifer\'s shoe size?'));
+      response6 = parseInt(prompt('Guess again. What is Jennifer\'s favorite number?'));
     }else{
-      alert('Bingo! I do wear a size 6');
+      alert('Bingo! ' + response6 + ' is my favorite number.');
       numberOfCorrectAnswers += 1;
       break;
     }
     counter += 1;
   }
-  console.log(' Correct answer is: 6. What is Jennifer\'s shoe size?' + ' user answered: ' + response6);
+  console.log(' Correct answer is: 6. What is Jennifer\'s favorite number?' + ' user answered: ' + response6);
 } // end question6
+
 question6();
 
 alert('The following question requires a word input');
@@ -113,12 +114,12 @@ function question7() {
   var favoriteFruits = ['banana', 'apple', 'grapes', 'watermelon', 'kiwi'];
   var numberOfTries = 0;
   var result = false;
-  while (numberOfTries <= 6) {
+  while (numberOfTries < 6) {
     var response7 = prompt('What is Jennifer\'s favorite fruit?');
     for(var i = 0; i < favoriteFruits.length; i++) {
       if(response7 === favoriteFruits[i]) {
         result = true;
-        numberOfCorrectAnswers++;
+        numberOfCorrectAnswers += 1;
         break;
       }
     }
